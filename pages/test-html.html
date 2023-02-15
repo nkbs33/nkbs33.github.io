@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="chinese (simplified)">
     <head>
-          <title>hello - About</title>
+          <title>小站 - Test Html</title>
         <meta charset="utf-8" />
         <meta name="generator" content="Pelican" />
         <link rel="stylesheet" type="text/css" href="/theme/css/style.css">
@@ -14,24 +14,34 @@
 
     <body id="index" class="home">
         <!--header id="banner" class="body">
-            <h1><a href="/">hello</a></h1>
+            <h1><a href="/">小站</a></h1>
         </header-->
         
         <nav class="topnav">
             <ul>
-                <li><a href="/">HOME</a></li>
+                <li><a href="/">首页</a></li>
 
-                        <li class="active"><a href="/pages/about.html">About</a></li>
+                        <li class="active"><a href="/pages/test-html.html">Test Html</a></li>
+                        <li><a href="/pages/guan-yu-wo.html">关于我</a></li>
                 
             </ul>
         </nav>
         <!-- /#menu -->
 
     <section id="content" class="body">
-        <h2>About</h2>
+        <h2>Test Html</h2>
         
     
-        <p>猫车老师是猫也是车</p>
+        
+    Test html file.
+    <button id="test_button">Click me</button>
+    <script>
+        document.getElementById("test_button").addEventListener("click", Test);
+        function Test(){
+            alert("hello?");
+        }
+    </script>
+
     
     </section>
 
