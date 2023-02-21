@@ -1,19 +1,50 @@
+* {
+  box-sizing:border-box
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Noto Sans SC', sans-serif;
 }
 
-.topnav {
+.main_content {
   position: relative;
   overflow: hidden;
-  width:100%;
-  top: 100px;
+  width:60%;
+  top: 0px;
   left: 20%;
 }
+a {
+  text-decoration: none;
+  color: #222;
+}
+.topnav{
+  border: #eee;
+  border-style: dotted;
+  border-width: 0.001cm;
+  height: 200px;
+  margin-top: 10px;
+}
+.topnav::before {
+  content:"";
+  background-image: url("/theme/images/1234.png");
+  background-size:120%;
+  background-position: 0 -80px;
+  position:absolute;
+  top: 10px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height:200px;
+  opacity:0.75;
+}
 .topnav ul {
+  margin: 0;
   padding: 0;
   list-style: none;
+  position:relative;
+  bottom: -150px;
 }
 
 .topnav a {
@@ -21,32 +52,19 @@ body {
   display: block;
   color: #222;
   text-align: center;
-  padding: 14px 16px 14px 0px;
-  text-decoration: none;
+  padding: 14px 16px 14px 14px;
   font-size: 15px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #dddddd40;
   color: black;
 }
 
-.topnav a.active {
-  color: #2020A0;
+.topnav li.active a{
+  color: #eee;
 }
 
-.topnav .icon {
-  display: none;
-}
-
-.topnav .hrefBar {
-  width:100%;
-  height:50px;
-}
-
-
-@media screen and (max-width: 600px) {
-}
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
@@ -62,9 +80,7 @@ body {
   }
 }
 
-section#content{
-    margin-top:120px;
-    margin-left:20%;
+section#content {
 }
 
 h1,h2,h3,h4 {
@@ -73,4 +89,8 @@ h1,h2,h3,h4 {
 
 footer.body{
   margin-left:20%;
+}
+
+#post-list li {
+  list-style-type: none;
 }

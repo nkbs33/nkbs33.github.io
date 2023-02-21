@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="chinese (simplified)">
     <head>
-          <title>小站 - 关于我</title>
+          <title>小站 - Gallery</title>
         <meta charset="utf-8" />
         <meta name="generator" content="Pelican" />
         <link rel="stylesheet" type="text/css" href="/theme/css/style.css">
@@ -18,20 +18,31 @@
                 <ul>
                     <li id="home_nav"><a href="/">首页</a></li>
 
-                            <li><a href="/pages/gallery.html">Gallery</a></li>
-                            <li class="active"><a href="/pages/guan-yu-wo.html">关于我</a></li>
+                            <li class="active"><a href="/pages/gallery.html">Gallery</a></li>
+                            <li><a href="/pages/guan-yu-wo.html">关于我</a></li>
                     
                 </ul>
             </nav>
             <!-- /#menu -->
 
     <section id="content" class="body">
-        <h2>关于我</h2>
+        <h2>Gallery</h2>
         
     
-        <p>猫车老师是猫也是车。</p>
-<p>研究过物理模拟，现在在研究基于机器学习的角色动画。</p>
-<p>喜欢的音乐是zutomayo。</p>
+        
+    <p>
+        放一些有趣的小玩意。
+    </p>
+    <div>
+        <button id="test_button">点我</button>
+    </div>
+    <script>
+        document.getElementById("test_button").addEventListener("click", Test);
+        function Test(){
+            alert("你好呀");
+        }
+    </script>
+
     
     </section>
         </div>
