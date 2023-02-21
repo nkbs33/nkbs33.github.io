@@ -12,6 +12,7 @@ body {
   position: relative;
   overflow: hidden;
   width:60%;
+  min-width: 800px;
   top: 0px;
   left: 20%;
 }
