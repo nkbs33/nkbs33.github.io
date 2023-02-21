@@ -132,7 +132,9 @@ ol#post-list {
 #post-list li {
   list-style-type: none;
 }
-
+#post-list a {
+  cursor: default;
+}
 article {
   border-style: solid;
   border-width: 0.001cm;
@@ -157,6 +159,8 @@ div#side_block{
   border-radius: 25px;
   border-width: 0.07cm;
   float:right;
+  padding-top: 5px;
+  padding-left: 5px;
   margin: -12px -31px 0 0px;
   border-color: #4a6f4b5a;
   color:#22222200;
@@ -165,12 +169,21 @@ div#side_block{
   background-color: #edf3ed36;
   transition: opacity 0.5s, height 0.5s, width 0.5s, color 0.5s, background-color 0.5s, margin 0.5s;
 }
+div#side_block li {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 div#side_block:hover{
   background-color: #edf3ed99;
   height:200px;
   width:150px;
   color:#222222;
   margin: -12px -130px 0 0;
+}
+
+div#side_block:hover li{
+  opacity: 1;
 }
 
 @media screen and (max-width: 1050px) {
