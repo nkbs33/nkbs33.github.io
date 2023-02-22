@@ -47,13 +47,14 @@ a {
   padding: 0;
   list-style: none;
   position:relative;
-  bottom: -160px;
+  bottom: -159px;
 }
 .topnav a {
   float: left;
   display: block;
   color: #000000d9;
   text-align: center;
+  margin-right:0.5px;
   padding: 14px 16px 14px 14px;
   font-size: 15px;
   background-color: #f6f5f540;
