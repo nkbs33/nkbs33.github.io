@@ -31,7 +31,7 @@ a {
 }
 .topnav::before {
   content:"";
-  background-image: url("/theme/images/1234.png");
+  background-image: url("/theme/images/banner.jpg");
   background-size:120%;
   background-position: 40% 90%;
   position:absolute;
