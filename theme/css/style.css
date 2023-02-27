@@ -2,23 +2,29 @@
   box-sizing:border-box
 }
 body {
-  background-color: #ffffff;
+  background-color: #ecefe3;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Noto Sans SC', sans-serif;
+  color: #3d492f;
 }
 a {
   text-decoration: none;
-  color: #222;
+  color:#3d492f;
 }
-
+p {
+  font-size: 18px;
+  line-height:30px;
+  
+}
 
 .main_content {
   position: relative;
   overflow:visible;
   width:60%;
   margin:auto;
-  max-width: 900px;
+  max-width: 1200px;
+  min-width: 800px;
   top: 0px;
 }
 .topnav{
@@ -52,7 +58,6 @@ a {
 .topnav a {
   float: left;
   display: block;
-  color: #000000d9;
   text-align: center;
   margin-right:0.5px;
   padding: 14px 16px 14px 14px;
@@ -66,38 +71,33 @@ a {
 }
 .topnav a:hover {
   background-color: #f6f5f57d;
-  color: #000000d9;
 }
 .topnav li.active a{
   color: #ffffffd1;
   background-color: #13180f5c;
 }
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .topnav.responsive {
     position: relative;
   }
   .main_content {
+    min-width: 0px;
     width:100%;
   }
   .topnav::before {
     background-size:cover;
-    border-radius: 0;
   }
 }
 
 section#content h2{
   margin: 25px 0 -10px 0;
 }
-
 h1,h2,h3,h4 {
   font-weight: 500;
 }
-
 footer.body{
   margin-left:20%;
 }
-
 ol#post-list {
   padding-inline-start: 0px;
   border-color: #90b591;
@@ -120,70 +120,16 @@ article {
   padding-left: 20px;
   margin-top:15px;
   box-shadow: 3px 3px #2b8d2f0f;
+  background-color: #f7ffe830;
 }
 article:hover{
-  background-color: #edf3ed;
+  background-color: #f8fcf076;
 }
 article h3 {
   margin-bottom: 5px;
 }
 
-
-
-div#side_block{
-  height:50px;
-  width: 50px;
-  border-style: dotted;
-  border-radius: 25px;
-  border-width: 0.07cm;
-  float:right;
-  padding-top: 5px;
-  padding-left: 5px;
-  margin: -12px -31px 0 0px;
-  border-color: #4a6f4b5a;
-  color:#22222200;
-  white-space: nowrap;
-  overflow: hidden;
-  background-color: #edf3ed36;
-  opacity:0.5;
-  transition: opacity 0.5s, height 0.5s, width 0.5s, color 0.5s, background-color 0.5s;
-}
-div#side_block ul {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-div#side_block:hover{
-  background-color: #edf3ed99;
-  height:200px;
-  width:150px;
-  color:#222222;
-  opacity: 1;
-  /*margin: -12px -130px 0 0;*/
-}
-div#side_block:hover ul{
-  opacity: 1;
-}
-div#side_block ul{
- list-style-type: none; 
- padding-left: 20px;
- display:block;
-}
-div.side_block_parent{
-  position:absolute;
-  overflow:visible;
-  width:100%;
-  height:0;
-}
-@media screen and (max-width: 750px) {
-  div#side_block{
-    margin: -12px -0px 0 0px;
-  }
-}
-*.no_transition{
-  transition: none !important;
-}
-
-
+/*index.html - article entry background*/
 div.absolute_div{
   position: absolute;
   width:100%;
@@ -201,3 +147,83 @@ div.article_bg{
   float:right;
   margin-right:46px;
 }
+
+/*side block*/
+div#side_block{
+  height:50px;
+  width: 50px;
+  border-style: dotted;
+  border-radius: 25px;
+  border-width: 0.07cm;
+  float:right;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin: -12px -31px 0 0px;
+  border-color: #4a6f4b5a;
+  color:#22222200;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #edf3ed36;
+  opacity:0.5;
+  transition: opacity 0.5s, height 0.5s, width 0.5s, color 0.5s, background-color 0.5s, margin 0.5s;
+}
+div#side_block ul {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+div#side_block:hover{
+  background-color: #edf3ed99;
+  height:200px;
+  width:150px;
+  color:#3d492f;
+  opacity: 1;
+  margin: -12px -131px 0px 0px;
+}
+div#side_block:hover ul{
+  opacity: 1;
+}
+div#side_block ul{
+ list-style-type: none; 
+ padding-left: 20px;
+ display:block;
+}
+div.side_block_parent{
+  position:absolute;
+  overflow:visible;
+  width:100%;
+  height:0;
+}
+@media screen and (max-width: 800px) {
+  div#side_block{
+    margin: -12px -0px 0 0px;
+  }
+  div#side_block:hover{
+    margin: -12px -0px 0 0px;
+  }
+}
+*.no_transition{
+  transition: none !important;
+}
+section#article_content{
+  margin-top: 30px;
+  background-color: #f7ffe830;
+  border-color: #ffffec;
+  border-style: solid;
+  padding: 1px 20px 1px 30px;
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+  min-height: 500px;
+  box-shadow: 3px 3px #2b8d2f0f;
+}
+@media screen and (max-width: 800px) {
+  div#side_block{
+    margin: -12px -0px 0 0px;
+  }
+  div.entry-content p{
+    text-indent: 1em;
+  }
+  section#article_content{  
+    padding: 1px 10px;
+  }
+}
+

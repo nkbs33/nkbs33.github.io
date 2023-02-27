@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="/theme/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+SC:wght@300&family=Noto+Serif+SC:wght@300&display=swap" rel="stylesheet">
 
 
 
@@ -34,8 +34,8 @@
   <div id="side_block" class="no_transition">
     <ul class="no_transition">
       <li><a class="article_return" href="/">返回</a></li>
-      <li>侧边栏文字</li>
-      <li>侧边栏文字</li>
+      <li>传送门</li>
+      <li>未开启</li>
     </ul>
   </div>
 </div>
@@ -58,26 +58,25 @@
     </div>
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    <p>这是第n次做个人主页的尝试，虽然不知道能坚持到什么程度——或许把主题搓的好看一点就比较有动力持续写作了。还在做学术的时候，因为没有什么论文成果，不好意思做个人主页。想不到即使已经博士毕业，还是没有什么成果，那么就让这个主页干脆与学术毫不相关好了。</p>
+    <p>第n次做个人主页的尝试，虽然不知道能坚持到什么程度——或许把主题搓得好看一点就比较有动力了。读博的时候因为没有什么成果，不好意思做个人主页。想不到即使现在已经博士毕业，情况还是没什么改变，那就让这个主页干脆与学术毫不相关好了。</p>
 <p><a href="/di-er-pian.html">下一篇：第二篇</a></p>
   </div><!-- /.entry-content -->
 </section>
-
-<script>
-  document.addEventListener("DOMContentLoaded", ()=>{
-    setTimeout(()=>{
-      console.log("remove no transition");
-      var elements = document.getElementsByClassName("no_transition")
-      for(var i=0; i<elements.length; i++)
-        elements[i].classList.remove("no_transition");
-    }, 100);
-  })
-</script>
         </div>
         <!--footer id="contentinfo" class="body">
             <address id="about" class="vcard body">
             Powered by <a href="https://getpelican.com/">Pelican</a>
             </address>
         </footer--><!-- /#contentinfo -->
+        <script>
+            document.addEventListener("DOMContentLoaded", ()=>{
+              setTimeout(()=>{
+                console.log("remove no transition");
+                var elements = document.getElementsByClassName("no_transition")
+                for(var i=0; i<elements.length; i++)
+                  elements[i].classList.remove("no_transition");
+              }, 100);
+            })
+          </script>
     </body>
 </html>
