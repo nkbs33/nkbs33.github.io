@@ -116,10 +116,9 @@ ol#post-list {
 }
 article {
   border-style: solid;
-  border-width: 0.001cm;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  border-color: #2d452e1f;
+  border-color: #ffffec;
   padding-left: 20px;
   margin-top:15px;
   box-shadow: 3px 3px #2b8d2f0f;
