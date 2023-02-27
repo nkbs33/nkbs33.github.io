@@ -4,7 +4,8 @@
 body {
   background-color: #ecefe3;
   margin: 0;
-  font-family:'Noto Serif SC';
+  font-family:'Microsoft Yahei';
+  font-weight:300;
   /*
   font-family: 'Montserrat', sans-serif;
   font-family: 'Noto Sans SC', sans-serif;
