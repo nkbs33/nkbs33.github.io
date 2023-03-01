@@ -229,6 +229,9 @@ section#article_content{
   }
 }
 
+section#page-content {
+  height:100%;
+}
 section#page-content h2{
   margin: 25px 0 -10px 0;
 }
@@ -238,7 +241,7 @@ div#gallery{
   background-color: #f7ffe830;
   border-color: #ffffec;
   border-style: solid;
-  padding: 1px 20px 1px 30px;
+  padding: 1px 20px;
   border-radius: 7.5px;
   min-height: 500px;
   box-shadow: 0px 4px 3px 6px #2b8d2f0f;
@@ -251,6 +254,7 @@ div#gallery button{
   background-color: #f8ffef;
   font-size: 1.5em;
   color:#3d492f;
+  cursor:pointer;
 }
 
 div#page-document{
@@ -262,4 +266,10 @@ div#page-document{
   border-radius: 7.5px;
   min-height: 500px;
   box-shadow: 0px 4px 3px 6px #2b8d2f0f;
+}
+
+#c{
+  width:100%;
+  height:500px;
+  display: block;
 }
