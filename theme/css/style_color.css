@@ -1,0 +1,21 @@
+html {
+    background-color: #ecefe3;
+    color: #596e41;
+}
+a {
+    color:#596e41;
+}
+.topnav a {
+    color:#3d492f;
+    background-color: #f6f5f540;
+}
+.topnav a:hover {
+  background-color: #f6f5f57d;
+}
+.topnav li.active a{
+  color: #ffffffd1;
+  background-color: #13180f5c;
+}
+ol#post-list{
+  background-color: #fcffefbf;
+}

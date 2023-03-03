@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="generator" content="Pelican" />
         <link rel="stylesheet" type="text/css" href="/theme/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/theme/css/style_color.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
@@ -15,15 +16,15 @@
         <div class="main_content">
             <nav class="topnav">
                 <ul>
-                    <li id="home_nav"><a href="/">首页</a></li>
+                    <li id="home_nav"><a href="/">Blog</a></li>
+                        <li  ><a href="/pages/gallery.html">Gallery</a></li>
+                        <li  ><a href="/pages/guan-yu-wo.html">关于我</a></li>
 
-                            <li><a href="/pages/gallery.html">Gallery</a></li>
-                            <li><a href="/pages/guan-yu-wo.html">关于我</a></li>
                     
                 </ul>
             </nav>
             <!-- /#menu -->
-
+            <!--<p> </p>-->
     <h1>Tags for 小站</h1>
     <ul>
     </ul>
@@ -42,6 +43,12 @@
                   elements[i].classList.remove("no_transition");
               }, 100);
             })
-          </script>
+        </script>
+        <script>
+            if(window.location.href.split('/')[3] != "pages")
+            {
+                document.getElementById("home_nav").classList.add("active");
+            }
+        </script>
     </body>
 </html>
