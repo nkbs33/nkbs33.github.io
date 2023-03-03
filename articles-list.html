@@ -17,7 +17,7 @@
             <nav class="topnav">
                 <ul>
                     <li id="home_nav"><a href="/">Home</a></li>
-                    <li id="blog_nav"><a href="/articles.html">Blog</a></li>
+                    <li id="blog_nav"><a href="/articles-list">Blog</a></li>
                         <li  ><a href="/pages/gallery.html">Gallery</a></li>
                         <li  ><a href="/pages/guan-yu-wo.html">关于我</a></li>
 
@@ -35,11 +35,39 @@
     </div>
   </div>
 <section id="content" class="body">
-<h2>主页</h2>
+<h2>文章一览</h2>
+
+<ol id="post-list">
+    <li><a href="/di-er-pian.html" rel="bookmark" title="第二篇">
+        <article class="hentry">
+            <header>
+                <h3 class="entry-title">
+                    第二篇
+                </h3> 
+            </header>
+            <footer class="post-info">
+                <time class="published" datetime="2023-02-21T19:17:00+01:00"> 2023-02-21 19:17 </time>
+            </footer><!-- /.post-info -->
+            <div class="entry-content"> <p>第二篇文章现在什么也没写。</p> </div><!-- /.entry-content -->
+            <div class="absolute_div"><div class="article_bg"></div></div>
+        </article>
+    </a></li>
+    <li><a href="/zuo-zhu-ye-ge.html" rel="bookmark" title="做主页咯">
+        <article class="hentry">
+            <header>
+                <h3 class="entry-title">
+                    做主页咯
+                </h3> 
+            </header>
+            <footer class="post-info">
+                <time class="published" datetime="2023-02-14T18:24:00+01:00"> 2023-02-14 18:24 </time>
+            </footer><!-- /.post-info -->
+            <div class="entry-content"> <p>第n次做个人主页，虽然不知道能坚持到什么程度——或许把主题搓得好看一点就比较有动力了。读博的时候因为没有什么成果，不好意思 …</p> </div><!-- /.entry-content -->
+            <div class="absolute_div"><div class="article_bg"></div></div>
+        </article>
+    </a></li>
+</ol><!-- /#posts-list -->
 </section><!-- /#content -->
-<script>
-  document.getElementById("home_nav").classList.add("active");
-</script>
         </div>
         <!--footer id="contentinfo" class="body">
             <address id="about" class="vcard body">
@@ -57,10 +85,9 @@
             })
         </script>
         <script>
-            const seg = window.location.href.split('/')[3];
-            if( seg.substring(0,8) == "articles")
+            if(window.location.href.split('/')[3] != "pages")
             {
-                document.getElementById("blog_nav").classList.add("active");
+                document.getElementById("home_nav").classList.add("active");
             }
         </script>
     </body>

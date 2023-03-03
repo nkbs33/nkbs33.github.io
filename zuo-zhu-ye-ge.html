@@ -21,7 +21,8 @@
         <div class="main_content">
             <nav class="topnav">
                 <ul>
-                    <li id="home_nav"><a href="/">Blog</a></li>
+                    <li id="home_nav"><a href="/">Home</a></li>
+                    <li id="blog_nav"><a href="/articles.html">Blog</a></li>
                         <li  ><a href="/pages/gallery.html">Gallery</a></li>
                         <li  ><a href="/pages/guan-yu-wo.html">关于我</a></li>
 
@@ -60,7 +61,7 @@
   </footer><!-- /.post-info -->
   <div class="entry-content">
     <p>第n次做个人主页，虽然不知道能坚持到什么程度——或许把主题搓得好看一点就比较有动力了。读博的时候因为没有什么成果，不好意思做个人主页。想不到即使现在已经博士毕业，情况还是没什么改变，那就……写点别的好了。</p>
-<p><a href="/di-er-pian.html">下一篇：第二篇</a></p>
+<p><a href="/articles/di-er-pian.html">下一篇：第二篇</a></p>
   </div><!-- /.entry-content -->
 </section>
         </div>
@@ -80,9 +81,9 @@
             })
         </script>
         <script>
-            if(window.location.href.split('/')[3] != "pages")
+            if(window.location.href.split('/')[3] == "articles.html")
             {
-                document.getElementById("home_nav").classList.add("active");
+                document.getElementById("blog_nav").classList.add("active");
             }
         </script>
     </body>

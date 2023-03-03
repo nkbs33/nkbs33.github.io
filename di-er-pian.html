@@ -21,7 +21,8 @@
         <div class="main_content">
             <nav class="topnav">
                 <ul>
-                    <li id="home_nav"><a href="/">Blog</a></li>
+                    <li id="home_nav"><a href="/">Home</a></li>
+                    <li id="blog_nav"><a href="/articles.html">Blog</a></li>
                         <li  ><a href="/pages/gallery.html">Gallery</a></li>
                         <li  ><a href="/pages/guan-yu-wo.html">关于我</a></li>
 
@@ -79,9 +80,9 @@
             })
         </script>
         <script>
-            if(window.location.href.split('/')[3] != "pages")
+            if(window.location.href.split('/')[3] == "articles.html")
             {
-                document.getElementById("home_nav").classList.add("active");
+                document.getElementById("blog_nav").classList.add("active");
             }
         </script>
     </body>
