@@ -40,7 +40,7 @@ h3 {
 }
 .topnav::before {
   content:"";
-  background-image: url("/theme/images/banner.jpg");
+  background-image: url("/theme/images/banner.png");
   background-size:cover;
   background-position: 40% 90%;
   position:absolute;
