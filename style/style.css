@@ -3,12 +3,23 @@ body {
 	margin-left:150px;
 	margin-right:150px;
 	font-family: 'Microsoft Yahei';
+	font-size:1.2em;
 }
 
 p {
 	line-height: 200%;
-	font-size:1.2em;
-	
+}
+
+li {
+	margin-top:10px;
+	list-style:square;
+}
+
+a {
+	text-decoration: none;
+}
+a:visited{
+	color: #444;
 }
 
 @media screen and (max-width:768px) {
