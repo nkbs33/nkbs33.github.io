@@ -7,6 +7,14 @@ body {
 
 p {
 	line-height: 200%;
-	font-size:18px;
+	font-size:1.2em;
 	
+}
+
+@media screen and (max-width:768px) {
+	body {
+		margin-top:20px;
+		margin-left:25px;
+		margin-right:25px;
+	}
 }
