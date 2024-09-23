@@ -19,7 +19,10 @@ a {
 	text-decoration: none;
 }
 a:link{
-	color: #444;
+	color: black;
+}
+a:visited{
+	color: #555;
 }
 a:active{
 	color:black;
