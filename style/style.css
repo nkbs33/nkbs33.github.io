@@ -18,11 +18,17 @@ li {
 a {
 	text-decoration: none;
 }
+a:link{
+	color: #444;
+}
 a:active{
 	color:black;
 }
-a:visited{
-	color: #444;
+a:hover{
+	color:black;
+}
+a:active{
+	color:black;
 }
 
 @media screen and (max-width:768px) {
