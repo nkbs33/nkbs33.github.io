@@ -2,7 +2,7 @@ body {
 	margin-top:50px;
 	margin-left:150px;
 	margin-right:150px;
-	font-family: 'Microsoft Yahei';
+	font-family: 'Microsoft Yahei','PingFang SC';
 	font-size:1.2em;
 }
 
@@ -17,6 +17,9 @@ li {
 
 a {
 	text-decoration: none;
+}
+a:active{
+	color:black;
 }
 a:visited{
 	color: #444;
